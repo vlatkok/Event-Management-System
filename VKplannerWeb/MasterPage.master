@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        { color:White;
+            width: 100%;
+            background-color: #1E90FF;
+        }
+        .style2
+        {
+            width: 191px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+    <div>
+    </div>
+    <table align="center" class="style1">
+        <tr>
+            
+             <td class="style2">   <br />
+                <asp:Image ID="Image1" runat="server" Height="130px" ImageUrl="~/MyPlanner.jpg" 
+                    Width="184px" />
+                <br />
+                <br />
+                <br />
+                <br />
+                 
+            </td>
+            <td align=center>
+            <asp:Image ID="Image2" runat="server" Height="248px" 
+                    ImageUrl="~/Welome My Planner.jpg" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                <br />
+                <br />
+                <asp:Calendar ID="Calendar1" runat="server" ForeColor="White"></asp:Calendar>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                </td>
+                
+                <td>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+          
+        
+                   
+        
+          
+        
+        </asp:ContentPlaceHolder>
+
+                </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
